@@ -1,0 +1,33 @@
+
+//BLog ANd Work Next-Prev
+.blog-next-prev, .work-next-prev{
+  background:  @black + 50;
+  border-top: 10px solid @white - 20;
+  .prev-post,.next-post, .prev-work,.next-work{
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: @white;
+    .transition;
+    padding: 50px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    *{
+      position: relative;  
+    }
+    &:before{
+      content: "";
+      background: fade(@black, 40%);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+    @media (max-width: 800px){
+      width: 100%;
+    }
+  }
+}

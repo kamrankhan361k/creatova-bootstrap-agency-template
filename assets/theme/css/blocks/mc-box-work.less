@@ -1,0 +1,43 @@
+
+.box-work{
+  margin-bottom: 30px;
+  padding: 5px;
+  background: @white;
+  .box_shadow(0 2px 2px fade(@black, 15%));
+  position: relative;
+  .work-preview{
+    position: relative;
+    margin-bottom: 10px;
+    img{
+      width: 100%;
+    }
+    .hover{
+      position: absolute;
+      width: 100%;
+      .transition;
+      opacity: 0;
+      height: 100%;
+      background: fade(@black, 60%);
+      text-align: center;
+      left: 0;
+      top: 0;
+      a{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        .text_shadow(0 2px 2px fade(@black, 15%)); 
+        text-decoration: none;
+        margin-top: -15px;
+        margin-left: -15px;
+        font-size: 30px;
+        color: @white;
+      }
+    }
+    &:hover{
+      .hover{
+        opacity: 1;
+      }
+    }
+  }
+
+}

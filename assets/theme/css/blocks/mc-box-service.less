@@ -1,0 +1,40 @@
+
+.box-service{
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  .transition;
+  padding: 20px;
+  padding-top: 40px;
+  border: 1px solid @white - 20;
+  .ic-service{
+    position: absolute;
+    background: @white;
+    width: 70px;
+    height: 70px;
+    .transition;
+    color: @white - 20;
+    line-height: 0;
+    margin-left: -35px;
+    top: -35px;
+    left: 50%;
+    font-size: 5em;
+  }
+  .title-service{
+    margin-bottom: 20px;
+    &.color-dark{
+      a{
+        color: @black + 40;
+        text-decoration: none;
+      }
+    }
+  }
+  &.with-hover{
+    &:hover, &.active{
+      .box_shadow(0 5px 0 @cFlatAlizarin);
+      .ic-service {
+        color: @cFlatAlizarin;
+      }
+    }
+  }
+}

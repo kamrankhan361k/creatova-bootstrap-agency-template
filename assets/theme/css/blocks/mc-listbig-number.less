@@ -1,0 +1,38 @@
+
+.list-numbered{
+  li{
+    background: @white;
+    position: relative;
+    padding: 15px;
+
+    padding-left: 115px;
+    min-height: 110px;
+    border: 4px double @white - 20;
+    .radius(20px);
+    margin-bottom: 15px;
+    .number-order{
+      font-size: 20px;
+      font-weight: 700;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      line-height: 80px;
+      text-align: center;
+      .radius(20px);
+      border: 1px solid @white - 20;
+    }
+    h4, .number-order{
+      .transition;
+    }
+    &:hover{
+      .number-order{
+        background: @cFlatAlizarin;
+        color: @white;
+        .radius(50%);
+        border-color: transparent;
+      }
+    }
+  }
+}

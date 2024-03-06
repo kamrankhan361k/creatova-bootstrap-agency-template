@@ -1,0 +1,39 @@
+
+.client-logos{
+  margin:0;
+  padding:0;
+  li{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    border-right: 1px solid @white - 30;
+    border-bottom: 1px solid @white - 30;
+    @media (max-width: 600px){
+      width: 100%;
+      border:0 !important;
+    }
+
+    a{
+      padding: 20px;
+      display: block;
+      img{
+        .transition;
+        opacity: 0.6;
+        filter:alpha(opacity=60);
+        height: 40px;
+      }
+      &:hover{
+        img{
+          opacity: 1;
+          filter:alpha(opacity=100);
+        }
+      }
+    }
+    &.bottom{
+      border-bottom: 0;
+    }
+    &.right{
+      border-right: 0;
+    }
+  }
+}

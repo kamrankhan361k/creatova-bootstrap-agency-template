@@ -1,0 +1,46 @@
+.flat-accordion{
+  .panel-heading{
+    padding: 20px;
+  }
+  .panel-title{
+    font-size: 1.5em;
+    a{
+      text-decoration: none;
+      i{
+        margin-right: 5px;
+        .transition;
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        .transform(rotate(90deg));
+      }
+      &.collapsed{
+        i{
+          .transform(rotate(0deg));
+
+        }
+        &:hover{
+          i{
+            .transform(rotate(90deg));
+          }
+        }
+      }
+
+    }
+    span.pull-right{
+      font-size: 12px;
+      position: relative;
+      top: 5px;
+      display: inline-block;
+      @media (max-width: 600px){
+        display:block;
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+
+  .panel-body{
+    padding: 40px;
+  }
+}

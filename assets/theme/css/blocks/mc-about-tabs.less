@@ -1,0 +1,41 @@
+
+.tabs-area{
+  text-align: center;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  border-top: 10px solid  @white - 10;
+  position: absolute;
+  .tabs-list{
+    display: block;
+    margin: 0 auto;
+
+    max-width: 400px;
+    padding: 0;
+
+    list-style: none;
+    li{
+      float: left;
+      width: 50%;
+      a{
+        font-size: 20px;
+        font-family: 'Fredoka One';
+        background: fade(@white - 10, 50%);
+        .radius(0 0 5px 5px);
+        margin: 0 3px;
+        text-decoration: none;
+        color: @black + 40;
+        display: block;
+        padding: 10px;
+      }
+      &.active{
+        .radius(0 0 5px 5px);
+        background: @white - 10;
+      }
+    }
+  }
+}
+
+.about-tabs{
+  position: relative;
+}

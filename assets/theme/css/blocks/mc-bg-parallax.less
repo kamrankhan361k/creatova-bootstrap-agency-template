@@ -1,0 +1,24 @@
+
+#tubular-container, #tubular-shield{
+  display: none;
+}
+
+.big-bg-image{
+  min-height: 350px;
+  background:@white - 10 url(../images/bg3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &.mini-bg{
+    min-height: 200px;
+  }
+}
+
+.parallax-bg{
+  background-attachment: fixed;
+  @media (max-width: 1000px){
+    background-position: center !important;
+    background-attachment: inherit;
+
+  }
+}
